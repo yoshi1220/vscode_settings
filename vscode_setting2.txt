@@ -1,0 +1,173 @@
+{
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnSave": true,
+  "editor.autoIndent": "advanced",
+  //python
+  "python.formatting.provider": "autopep8",
+  // lintツール
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintEnabled": true,
+  // "python.linting.pylintArgs": ["--load-plugins", "pylint_django", "pylint_flask"],
+  "python.linting.pylintArgs": ["--load-plugins"], 
+  "python.linting.lintOnSave": true,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.flake8Args": [
+    "--ignore=W293, W504, E501",
+    "--max-complexity",
+    "20"
+  ],
+  "python.formatting.autopep8Args": ["--aggressive", "--aggressive"],
+  "autoDocstring.docstringFormat": "google",
+  //その他
+  "editor.renderIndentGuides": true,
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "cshtml": "html"
+  },
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": true,
+    "ruby": false, //Runs ruby -wc
+    "fasterer": true,
+    "debride": true,
+    "ruby-lint": false
+  },
+  "[ruby]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[erb]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2
+  },
+  "[vue]": {
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "files.autoSave": "afterDelay",
+  // 'Tab' キーに加えて 'Enter' キーで候補を受け入れるかどうかを制御します。改行の挿入や候補の反映の間であいまいさを解消するのに役立ちます。
+  "editor.acceptSuggestionOnEnter": "off",
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "erb",
+    "html.erb",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.zoomLevel": 0,
+  // 参照対象外ファイルの設定
+  "files.exclude": {
+    "/.git": true,
+    "/.DS_Store": true,
+    "/node_modules": true,
+    "/node_modules/": true
+  },
+  "search.exclude": {
+    "/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.rvm/**": true,
+    "**/node_modules/**": true,
+    "**/Library/**": true,
+    "**/GoogleDrive/**": true,
+    "**/Dropbox/**": true,
+    "**/.cocoapods/**": true,
+    "**/Pictures/**": true
+  },
+  "workbench.editor.enablePreview": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  // Bash on Ubuntu (on Windows)
+  //"terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+  "python.jediEnabled": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.semanticHighlighting.enabled": true,
+  "python.languageServer": "Pylance",
+  "editor.fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+  "terminal.integrated.fontSize": 14,
+  "python.autoComplete.extraPaths": [
+    "C:\\Anaconda3\\lib\\site-packages"
+  ],
+  "explorer.confirmDelete": false,
+  // vscodevim関連設定
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.visualstar": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["s"],
+      "after": ["c", "l"]
+    },
+    {
+      "before": ["S"],
+      "after": ["c", "c"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-c>": false,
+  },
+  "workbench.editorAssociations": [],
+  "python.analysis.extraPaths": [
+    "C:\\Anaconda3\\lib\\site-packages"
+  ],
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "editor.fontSize": 16,
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+}
