@@ -1,0 +1,187 @@
+{
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
+  "editor.renderWhitespace": "boundary",
+  "editor.autoIndent": "advanced",
+  //python
+  "python.formatting.provider": "autopep8",
+  // lintツール
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_django",
+    "pylint_flask"
+  ],
+  "python.linting.lintOnSave": true,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--ignore=W293, W504",
+    "--max-complexity",
+    "20"
+  ],
+  "python.formatting.autopep8Args": [
+    "--aggressive",
+    "--aggressive",
+  ],
+  "autoDocstring.docstringFormat": "google",
+  //その他
+  "editor.renderIndentGuides": true,
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "cshtml": "html"
+  },
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": true,
+    "ruby": false, //Runs ruby -wc
+    "fasterer": true,
+    "debride": true,
+    "ruby-lint": false
+  },
+  "[ruby]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[erb]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2
+  },
+  "[vue]": {
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "files.autoSave": "afterDelay",
+  // 'Tab' キーに加えて 'Enter' キーで候補を受け入れるかどうかを制御します。改行の挿入や候補の反映の間であいまいさを解消するのに役立ちます。
+  "editor.acceptSuggestionOnEnter": "off",
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "erb",
+    "html.erb",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.zoomLevel": 0,
+  // 参照対象外ファイルの設定
+  "files.exclude": {
+    "/.git": true,
+    "/.DS_Store": true,
+    "/node_modules": true,
+    "/node_modules/": true
+  },
+  "search.exclude": {
+    "/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.rvm/**": true,
+    "**/node_modules/**": true,
+    "**/Library/**": true,
+    "**/GoogleDrive/**": true,
+    "**/Dropbox/**": true,
+    "**/.cocoapods/**": true,
+    "**/Pictures/**": true,
+  },
+  // vscodevim関連設定
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.visualstar": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "c",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "S"
+      ],
+      "after": [
+        "c",
+        "c"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-d>": false,
+    "<C-c>": false,
+    "<C-e>": false
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Monokai Pro",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.formatOnPaste": true,
+  "python.jediEnabled": false,
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "python.languageServer": "Pylance",
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+}
